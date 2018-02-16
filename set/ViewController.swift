@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     @IBOutlet var cardButtons: [UIButton]!
     var game = Set()
     @IBOutlet weak var scoreLabel: UILabel!
+    
+    
+    //MARK: Computed properties
     var cardAndButtonAssociation : [UIButton : Card]{
         var toReturn = [UIButton : Card]()
         for index in game.onTable.indices {
@@ -55,6 +58,8 @@ class ViewController: UIViewController {
     
     //MARK: Functions
     func updateViewFromModel(){
+        //Updating score
+        scoreLabel.text = "Score: \(game.score)"
         let currentAssociation = cardAndButtonAssociation
         for button in cardButtons{
             if let card = currentAssociation[button]{
