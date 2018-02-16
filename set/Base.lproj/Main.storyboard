@@ -497,9 +497,8 @@
                                     <action selector="drawCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PN8-QX-KK0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpB-0V-7CD">
-                                <rect key="frame" x="16" y="603" width="145" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpB-0V-7CD">
+                                <rect key="frame" x="16" y="615" width="74.5" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -507,6 +506,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fpB-0V-7CD" secondAttribute="bottom" constant="16" id="02G-Rs-QZL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pai-mc-1eQ" secondAttribute="trailing" id="0li-bI-YrV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nMZ-Na-pyH" secondAttribute="trailing" constant="16" id="8Wp-gs-dqt"/>
                             <constraint firstItem="nMZ-Na-pyH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8ec-hC-xvN"/>
@@ -515,6 +515,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9U4-CS-XYJ" secondAttribute="trailing" constant="16" id="H1j-Nd-ys6"/>
                             <constraint firstItem="Pai-mc-1eQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JdX-be-0QA"/>
                             <constraint firstItem="Pai-mc-1eQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Vv2-Kb-tJ8"/>
+                            <constraint firstItem="fpB-0V-7CD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="W69-Uo-iFG"/>
+                            <constraint firstItem="9U4-CS-XYJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fpB-0V-7CD" secondAttribute="trailing" constant="8" symbolic="YES" id="fbQ-kg-fBZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9U4-CS-XYJ" secondAttribute="bottom" constant="16" id="u48-gv-XhC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
